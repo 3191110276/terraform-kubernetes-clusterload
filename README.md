@@ -1,1 +1,1 @@
-# terraform-kubernetes-clusterload
+# Module for deploying a Kubernetes load generator
