@@ -37,7 +37,7 @@ variable "clusterload_quota_memory_limit" {
   description = "Maximum for memory limits. The total amount of memory limits across all active Pods cannot exceed this value."
 }
 
-variable "clusterload_configurtions" {
+variable "clusterload_configurations" {
   type    = list(object({
     pod_name     = string
     pod_replicas = number
