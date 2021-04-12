@@ -42,14 +42,14 @@ variable "clusterload_configurtions" {
     pod_name     = string
     pod_replicas = number
     containers   = list(object({
-      name = string
-      run_type = string
-      run_scaler = string
-      run_value = string
+      name        = string
+      run_type    = string
+      run_scaler  = string
+      run_value   = string
       cpu_request = string
-      cpu_limit = string
+      cpu_limit   = string
       mem_request = string
-      mem_limit = string
+      mem_limit   = string
     }))
   }))
   default = [{
