@@ -78,5 +78,5 @@ variable "clusterload_configurations" {
       },
     ]
   }]
-  description = "This is the configuratin of the clusterload Deployment(s). One Deployment is created for each entry in the list. It is possible to tune the values, such as requests, limits, and utilization of each container that will be created."
+  description = "This is the configuration of the clusterload Deployment(s). One Deployment is created for each entry in the list. It is possible to tune the values, such as requests, limits, and utilization of each container that will be created."
 }
