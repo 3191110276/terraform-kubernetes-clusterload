@@ -39,7 +39,7 @@ resource "kubernetes_deployment" "clusterload" {
     name = each.value.pod_name
     namespace = var.namespace
     labels = {
-      app = each.value.name
+      app = each.value.pod_name
     }
   }
 
@@ -55,7 +55,7 @@ resource "kubernetes_deployment" "clusterload" {
     template {
       metadata {
         labels = {
-          app = each.value.name
+          app = each.value.pod_name
         }
       }
 
