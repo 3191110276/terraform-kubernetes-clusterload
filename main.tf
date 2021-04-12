@@ -32,7 +32,7 @@ resource "kubernetes_resource_quota" "clusterload-quota" {
 }
 
 resource "kubernetes_deployment" "clusterload" {
-  for_each = { for conf in var.clusterload_configurtions : conf.pod_name => conf }
+  for_each = { for conf in var.clusterload_configurations : conf.pod_name => conf }
   depends_on = [kubernetes_resource_quota.clusterload-quota]
   
   metadata {
